@@ -10,12 +10,12 @@ const Header = () => {
   const router = useRouter();
   const navList = [
     {
-      name: "Dashboard",
-      path: "/#Dashboard",
+      name: "Featured",
+      path: "/#Featured",
     },
     {
-      name: "Team",
-      path: "/#Team",
+      name: "Detailed",
+      path: "/#Detailed",
     },
     {
       name: "Project",
@@ -32,10 +32,10 @@ const Header = () => {
     setCurrentPathActive(hash || "");
   }, []);
   return (
-    <header className="main-header">
+    <header className="main-header z-[1000]">
       <nav className="bg-gray-800">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-          <div className="relative flex h-16 items-center justify-between">
+          <div className="relative flex h-16 items-center justify-between ">
             <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
               {/* Mobile menu button */}
               <button

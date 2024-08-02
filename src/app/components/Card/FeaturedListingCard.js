@@ -3,6 +3,7 @@ import {
   DirectionsCarFilled,
   DirectionsWalk,
   LocalOffer,
+  OfflineBolt,
 } from "@mui/icons-material";
 import Image from "next/image";
 
@@ -25,7 +26,7 @@ const FeaturedListingCard = ({
   },
 }) => {
   return (
-    <div className="flex flex-col featured-card shadow-lg w-[300px] h-[350px] max-w-[300px]">
+    <div className="flex flex-col featured-card shadow-lg w-[300px] h-[350px] max-w-[300px] scroll-snap-start">
       <div className="featured-img relative h-1/2">
         <Image
           src={content?.image}
@@ -45,13 +46,18 @@ const FeaturedListingCard = ({
         <h5 className="text-lg font-bold text-ellipsis text-nowrap whitespace-nowrap overflow-hidden w-full">
           {content?.title}
         </h5>
-        <p className="text-sm font-medium ">
-          From{" "}
-          <span className="text-[#f0591a] font-bold text-xl">
-            &pound;{content?.pricePerWeek}
-          </span>{" "}
-          /week
-        </p>
+        <div className="flex gap-2 items-center">
+          <p className="text-sm font-medium ">
+            From{" "}
+            <span className="text-[#f0591a] font-bold text-xl">
+              &pound;{content?.pricePerWeek}
+            </span>{" "}
+            /week
+          </p>
+          {content?.flashSale && (
+            <OfflineBolt className="text-[#f0591a] text-md" />
+          )}
+        </div>
         <span className="text-white text-sm font-bold rounded bg-[#3d5896] px-2 py-1 w-fit">
           Cheapest in the past {content?.cheapestIn}
         </span>

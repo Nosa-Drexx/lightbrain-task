@@ -32,7 +32,7 @@ h6 {
   padding: 0px;
   color: black;
 }
-span,
+
 p {
   margin: 0px;
   padding: 0px;
@@ -52,4 +52,26 @@ p {
 
   scrollbar-width: none; /* Hide the scrollbar */
   -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+.truncate-2-lines {
+  display: -webkit-box; /* Use the WebKit box model */
+  -webkit-box-orient: vertical; /* Set the box orientation to vertical */
+  -webkit-line-clamp: 2; /* Limit the text to 2 lines */
+  overflow: hidden; /* Hide the overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis ('...') for truncated text */
+}
+
+.dropdown-animation {
+  animation: fadeIn ease-in 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

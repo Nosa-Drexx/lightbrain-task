@@ -7,3 +7,12 @@
   background: url("../../images/university.jpg");
   background-size: contain;
 }
+
+.detailed-card {
+  .detailed-list-content {
+    width: calc(100% - 300px);
+    @media #{$sm, $xs, $xsl} {
+      width: 100%;
+    }
+  }
+}
