@@ -1,11 +1,9 @@
 import { Inter } from "next/font/google";
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import "tailwindcss/tailwind.css";
 
 import "./index.scss";
+// import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

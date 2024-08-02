@@ -1,0 +1,12 @@
+@use "../abstract" as *;
+.main-header {
+  position: sticky;
+  top: 0px;
+  .header-mobile-dropdown {
+    max-height: 500px;
+    transition: all 0.5s ease-in-out;
+    &.hide {
+      max-height: 0px;
+    }
+  }
+}
