@@ -33,7 +33,7 @@ const DetailedContent = () => {
       })}
       {listToShow.length > 0 && (
         <button
-          className="text-lg font-bold bg-[#38b2a7] w-full p-3 text-center text-white "
+          className="text-lg font-bold bg-[#38b2a7] w-full p-3 text-center text-white"
           onClick={showMoreList}
         >
           {listToShow.length === list.length ? "Show less" : "Show more"}{" "}
