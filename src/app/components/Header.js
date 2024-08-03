@@ -37,10 +37,9 @@ const Header = () => {
               <button
                 type="button"
                 className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                ariaControls="mobile-menu"
-                ariaExpanded="false"
                 onClick={() => setShowNavOnMobile(!showNavOnMobile)}
                 onBlur={() => setShowNavOnMobile(false)}
+                data-testid="mobile-menu-button"
               >
                 <span className="absolute -inset-0.5"></span>
                 <span className="sr-only">Open main menu</span>
@@ -56,6 +55,7 @@ const Header = () => {
                   width={200}
                   height={200}
                   alt="Company Logo"
+                  data-testid="company-logo"
                 />
               </div>
               <div className="hidden sm:ml-6 sm:flex items-center">
@@ -66,6 +66,7 @@ const Header = () => {
                       className={`rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white ${
                         currentPathActive === item.name ? "bg-gray-900" : ""
                       }`}
+                      data-testid={item.name.toLowerCase()}
                       key={index}
                       onClick={() => {
                         router.replace(item.path);

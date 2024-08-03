@@ -9,6 +9,7 @@ import Image from "next/image";
 
 const FeaturedListingCard = ({
   content = {
+    id: "ca38a9d1-c3bf-4058-8f00-b250412b2be6",
     title: "Janet Pool House",
     image: "/assets/images/bedroom.jpg",
     flashSale: false,
@@ -26,7 +27,10 @@ const FeaturedListingCard = ({
   },
 }) => {
   return (
-    <div className="flex flex-col featured-card shadow-lg w-[300px] h-[350px] max-w-[300px] snap-start">
+    <div
+      className="flex flex-col featured-card shadow-lg w-[300px] h-[350px] max-w-[300px] snap-start"
+      data-testid={`featured-card-${content?.id}`}
+    >
       <div className="featured-img relative h-1/2">
         <Image
           src={content?.image}

@@ -1,5 +1,6 @@
 const featuredList = [
   {
+    id: "14430ee1-4434-44d1-8e1c-0a01cf46f1a3",
     title: "Janet Pool House",
     image: "/assets/images/bedroom.jpg",
     flashSale: false,
@@ -16,6 +17,7 @@ const featuredList = [
     },
   },
   {
+    id: "0919c4d0-51c3-40e3-a5e8-ae481f04d6c0",
     title: "Stuhome Student Living Heights",
     image: "/assets/images/bedroom.jpg",
     flashSale: true,
@@ -28,6 +30,7 @@ const featuredList = [
     },
   },
   {
+    id: "e140ef0c-fec0-410e-a441-1efa0603d505",
     title: "Flat 49, Forsyth House, Tachbrook Street Oxford Road, London",
     image: "/assets/images/bedroom.jpg",
     flashSale: false,
@@ -40,6 +43,7 @@ const featuredList = [
     },
   },
   {
+    id: "6f8f455a-f7b5-481d-9575-ad45e0b818c3",
     title: "Janet Pool House",
     image: "/assets/images/bedroom.jpg",
     flashSale: false,
@@ -68,6 +72,7 @@ const featuredList = [
     },
   },
   {
+    id: "d1c1315f-b4ec-4c57-abb2-fa4530cc0fbb",
     title: "Flat 49, Forsyth House, Tachbrook Street Oxford Road, London",
     image: "/assets/images/bedroom.jpg",
     flashSale: false,
@@ -80,6 +85,7 @@ const featuredList = [
     },
   },
   {
+    id: "ba14e0ef-5f2b-4bae-91ad-9512f52b4d0b",
     title: "Janet Pool House",
     image: "/assets/images/bedroom.jpg",
     flashSale: true,
@@ -92,6 +98,7 @@ const featuredList = [
     },
   },
   {
+    id: "a8749680-f5e1-4bda-a79a-49dd576cbd6a",
     title: "Stuhome Student Living Heights",
     image: "/assets/images/bedroom.jpg",
     flashSale: false,
@@ -104,6 +111,7 @@ const featuredList = [
     },
   },
   {
+    id: "e9e33266-1e10-4b99-aa14-8bb1552b7793",
     title: "Flat 49, Forsyth House, Tachbrook Street Oxford Road, London",
     image: "/assets/images/bedroom.jpg",
     flashSale: false,
