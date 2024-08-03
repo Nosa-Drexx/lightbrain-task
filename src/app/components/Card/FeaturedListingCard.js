@@ -26,7 +26,7 @@ const FeaturedListingCard = ({
   },
 }) => {
   return (
-    <div className="flex flex-col featured-card shadow-lg w-[300px] h-[350px] max-w-[300px] scroll-snap-start">
+    <div className="flex flex-col featured-card shadow-lg w-[300px] h-[350px] max-w-[300px] snap-start">
       <div className="featured-img relative h-1/2">
         <Image
           src={content?.image}
@@ -61,7 +61,7 @@ const FeaturedListingCard = ({
         <span className="text-white text-sm font-bold rounded bg-[#3d5896] px-2 py-1 w-fit">
           Cheapest in the past {content?.cheapestIn}
         </span>
-        <div className="w-full flex gap-3">
+        <div className="w-full flex gap-2">
           {content?.distance?.walk && (
             <div className="flex gap-2 items-center">
               <DirectionsWalk /> {content?.distance?.walk}

@@ -3,7 +3,7 @@ import featuredList from "../db/featuredList";
 import FeaturedListingCard from "./Card/FeaturedListingCard";
 const FeaturedContents = () => {
   return (
-    <section className="flex gap-6 sm:gap-12 w-full overflow-auto hide-scrollbar py-3 scroll-snap-x mandatory">
+    <section className="flex gap-6 sm:gap-12 w-full overflow-auto hide-scrollbar py-3 overscroll-x-contain scroll-snap-x snap-x mandatory">
       {featuredList.map((content, index) => {
         return <FeaturedListingCard key={index} content={content} />;
       })}

@@ -60,6 +60,7 @@ const DetailedListingCard = ({
           <button
             className="w-[40px] h-[40px] rounded-full bg-white"
             onClick={handleLike}
+            data-testid="like-button"
           >
             {liked ? (
               <FavoriteOutlined style={{ fill: "red" }} />

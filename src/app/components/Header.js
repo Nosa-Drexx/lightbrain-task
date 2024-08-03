@@ -21,10 +21,6 @@ const Header = () => {
       name: "Project",
       path: "/#Project",
     },
-    {
-      name: "Calendar",
-      path: "/#Calendar",
-    },
   ];
 
   useEffect(() => {
